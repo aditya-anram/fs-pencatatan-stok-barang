@@ -1,0 +1,38 @@
+RESTFULL API
+------------------------------------------
+
+Tech Stack : 
+- Node (Express)
+- Mysql (ORM Sequelize)
+- Midleware (
+    - cors (untuk izin cors ke frontend), 
+    - express.json(untuk mendapatkan request body)
+    )
+- Package : 
+    - express
+    - mysql2
+    - sequelize
+    - cors
+    - nodemon
+- Add to package.json :
+    - "type" : "module" -> untuk menggunakan imort export ES6
+------------------------------------------
+
+API Endpoint
+
+Root : http://localhost:3000/products/
+
+GET : http://localhost:3000/products/ 
+GET BY ID : http://localhost:3000/products/{id}
+POST : http://localhost:3000/products/
+PATCH : http://localhost:3000/products/{id}
+DELETE : http://localhost:3000/products/{id}
+
+Standar Response :
+200 ----> OK (message: "OK")
+201 ----> Created (message: "Created")
+400 ----> Bad Request (message: "Bad Request")
+404 ----> Not Dound (message: "Not Found)
+503 ----> Service Unavailable (message: "Server Unavailable")
+
+------------------------------------------
